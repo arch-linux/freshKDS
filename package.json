@@ -1,0 +1,27 @@
+{
+  "name": "freshkds",
+  "version": "0.0.1",
+  "description": "FreshKDS implementation for Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arch-linux/freshKDS.git"
+  },
+  "keywords": [
+    "freshKDS",
+    "KDS",
+    "node",
+    "kitchen",
+    "delivery",
+    "system"
+  ],
+  "author": "Christopher Allen",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/arch-linux/freshKDS/issues"
+  },
+  "homepage": "https://github.com/arch-linux/freshKDS#readme"
+}
