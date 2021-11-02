@@ -15,7 +15,7 @@ module.exports = {
     getKDSLocationDevices:getKDSLocationDevices.getKDSLocationDevices,
     getKDSinformation:getKDSinformation.getKDSinformation,
     getKDSActiveOrders:getKDSActiveOrders.getKDSActiveOrders,
-    orderManager:orderManager,
-    sendKDSOrder:sendKDSOrder
+    sendKDSOrder:sendKDSOrder.sendKDSOrder,
+    orderManager:orderManager
 }
 
