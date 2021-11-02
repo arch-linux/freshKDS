@@ -22,7 +22,7 @@
 
 
 # freshKDS
- FreshKDS npmjs implementation in Node.JS.
+ FreshKDS implementation in Node.JS.
  </br>This plugin was built on the documentaton from [FreshKDS Developer Documentation](https://integration-docs.ftservices.cloud/#introduction)
  </br>The author of this software is not affiliated with FreshKDS or its associates in any way.
 
