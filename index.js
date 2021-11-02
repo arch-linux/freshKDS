@@ -3,11 +3,15 @@ var libdir = path.join(__dirname,'/lib/');
 var token = require(libdir + 'token.js');
 var getKDSLocations = require(libdir + 'getKDSlocations.js');
 var getKDSinformation = require(libdir + 'getKDSinformation.js');
+var getKDSLocationDevices = require(libdir + 'getKDSLocationDevices.js');
+
+
 
 
 module.exports = {
     getKDSLocations:getKDSLocations.getKDSLocations,
     token:token.token,
-    getKDSInformation:getKDSinformation.getKDSinformation
+    getKDSLocationDevices:getKDSLocationDevices.getKDSLocationDevices,
+    getKDSinformation:getKDSinformation.getKDSinformation
 }
 
