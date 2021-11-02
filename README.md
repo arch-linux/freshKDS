@@ -12,4 +12,9 @@ https://www.npmjs.com/package/freshkds
 npm install freshkds
 ```
 
+# Import
+```
+var freshKDS = require("freshkds");
+```
+
 
