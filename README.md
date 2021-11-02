@@ -68,7 +68,7 @@ This method will return a list of all locations.
 Same situation! Pass your token like before
 
 ```
- function getKDSLocations(token,(response) => {});
+freshKDS.getKDSLocations(token,(response) => {});
 ```
 
 # Get KDS Location Devices
@@ -76,7 +76,7 @@ Returns all devices at a location.
 Along with your token, you also need to pass a location ID to this method.
 
 ```
- function getKDSLocationDevices(token,location,response){});
+freshKDS.getKDSLocationDevices(token,location,response){});
  
 ```
 
@@ -85,7 +85,7 @@ Returns all active orders by location and (optionally) device
 If you would like to get all devices at a location, pass "all" in your device parameter instead of a device ID.
 
 ```
- function getKDSActiveOrders(token,location,device,(response)=>{});
+freshKDS.getKDSActiveOrders(token,location,device,(response)=>{});
  
 ```
 
@@ -99,7 +99,7 @@ The bare minimum for an order to be processed through FreshKDS is in the "Start 
 ### Start new order
 
 ```
-function startNewOrder(id,orderName,time,mode,name,qty,mods,terminal,(returns) => {
+freshKDS.orderManager.startNewOrder(id,orderName,time,mode,name,qty,mods,terminal,(returns) => {
   console.log(returns);
 });
 ```
@@ -119,18 +119,18 @@ The following additional and optional functions are avaible for order managmenet
 All of the following can be reviewed [here](https://integration-docs.ftservices.cloud/#send-kds-order)
 
 ```
-function startNewItem(name,qty,mods,returns){}; // creates a new item object
-function addItemsToOrder(order,items,returns){}; // adds item object to order
-function addPickupTime(order,pickupTime,returns){}; // adds phone number to order
-function optInForSMS(order,optIn,returns){}; // adds SMS messaging provided by freshKDS
-function addDeliveryAddress(order,address,returns){}; // adds a delivery address
-function addServer(order,server,returns){}; // adds a server name to an order
-function addSource(order,source,returns){}; // adds a source to an order
-function addSpecialInstructions(order,specialInstructions,returns){}; // adds special instructions to an order
-function addCustomerArrivedUrl(order,customerArrivedUrl,returns){}; // adds customer arrived url instructions to an order
-function addVehicleModel(order,vehicleModel,returns){}; // adds vehicle info to order
-function addVehicleColor(order,vehicleColor,returns){}; // adds vehicle color to an order
-function addCosts(order,costs,returns){}; // adds unit costs to an order
-function addDeliveryService(order,deliveryService,returns){}; // adds delivery service information to an order
+freshKDS.orderManager.startNewItem(name,qty,mods,returns){}; // creates a new item object
+freshKDS.orderManager.addItemsToOrder(order,items,returns){}; // adds item object to order
+freshKDS.orderManager.addPickupTime(order,pickupTime,returns){}; // adds phone number to order
+freshKDS.orderManager.optInForSMS(order,optIn,returns){}; // adds SMS messaging provided by freshKDS
+freshKDS.orderManager.addDeliveryAddress(order,address,returns){}; // adds a delivery address
+freshKDS.orderManager.addServer(order,server,returns){}; // adds a server name to an order
+freshKDS.orderManager.addSource(order,source,returns){}; // adds a source to an order
+freshKDS.orderManager.addSpecialInstructions(order,specialInstructions,returns){}; // adds special instructions to an order
+freshKDS.orderManager.addCustomerArrivedUrl(order,customerArrivedUrl,returns){}; // adds customer arrived url instructions to an order
+freshKDS.orderManager.freshKDS.orderManager.addVehicleModel(order,vehicleModel,returns){}; // adds vehicle info to order
+freshKDS.orderManager.addVehicleColor(order,vehicleColor,returns){}; // adds vehicle color to an order
+freshKDS.orderManager.addCosts(order,costs,returns){}; // adds unit costs to an order
+freshKDS.orderManager.addDeliveryService(order,deliveryService,returns){}; // adds delivery service information to an order
 
 ```
