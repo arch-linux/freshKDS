@@ -104,14 +104,6 @@ freshKDS.orderManager.startNewOrder(id,orderName,time,mode,name,qty,mods,termina
 });
 ```
 
-# Submit Order to FreshKDS
-This will transmit your order to KDS and respond with a status.
-
-```
-function sendKDSOrder(token,order,location,device,response){});
-
-```
-
 The parameters are as follows
 1. ID (Self generated, UNIQUE, Integer) EX: 001
 2. orderName (Customer Name or External Order Number, String) Ex: John Smith
@@ -121,6 +113,16 @@ The parameters are as follows
 6. Quantity of Items (First item in order) EX: 1
 7. Modifications of order, if none use [] **IN ARRAY FORMAT** (ARRAY) Ex: ["No Whip Cream"].
 8. Terminal ID See "Get KDS Location Devices" (STRING)
+
+
+
+# Submit Order to FreshKDS
+This will transmit your order to KDS and respond with a status.
+
+```
+function sendKDSOrder(token,order,location,device,response){});
+
+```
 
 
 The following additional and optional functions are avaible for order managmenet 
