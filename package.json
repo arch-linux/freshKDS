@@ -1,6 +1,6 @@
 {
   "name": "freshkds",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "FreshKDS implementation for Node",
   "main": "index.js",
   "scripts": {
