@@ -35,5 +35,21 @@ npm install freshkds
 var freshKDS = require("freshkds");
 ```
 
+# Token Based Methods
+Before running any functions you need to create a new token to pass later.
+freshKDS.token requires three parameters,
+
+1. demo or production
+2. Your API key
+3. Return method in which you will store your token for later use.
+
+```
+var freshKDS = require("freshkds");
+var token;
+freshKDS.token("demo",APIKEY,(returns) => {
+    token = returns;
+});
+```
+
 
 
