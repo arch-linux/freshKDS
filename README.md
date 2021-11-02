@@ -89,7 +89,7 @@ freshKDS.getKDSActiveOrders(token,location,device,(response)=>{});
  
 ```
 
-# Order Managmenet
+# Order Managemenet
 This (WIP) order managment will help you establish order objects instead of manually coding for them.
 If you would like to manually code these, please follow the documentation at [Send-KDS-Order](https://integration-docs.ftservices.cloud/#send-kds-order)
 
@@ -102,6 +102,14 @@ The bare minimum for an order to be processed through FreshKDS is in the "Start 
 freshKDS.orderManager.startNewOrder(id,orderName,time,mode,name,qty,mods,terminal,(returns) => {
   console.log(returns);
 });
+```
+
+# Submit Order to FreshKDS
+This will transmit your order to KDS and respond with a status.
+
+```
+function sendKDSOrder(token,order,location,device,response){});
+
 ```
 
 The parameters are as follows
