@@ -4,7 +4,7 @@
 </h1>
 
 <div align="center">
-  Seemless KDS integration for your next project!
+  Seemless KDS integration for your next kitchen project!
   <br />
   <br />
   <a href="https://github.com/arch-linux/freshKDS/issues/new?assignees=arch-linux&labels=triage&template=bug_report.md&title=">Report a Bug</a>
