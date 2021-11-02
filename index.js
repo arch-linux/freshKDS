@@ -14,6 +14,7 @@ module.exports = {
     token:token.token,
     getKDSLocationDevices:getKDSLocationDevices.getKDSLocationDevices,
     getKDSinformation:getKDSinformation.getKDSinformation,
-    getKDSActiveOrders:getKDSActiveOrders.getKDSActiveOrders
+    getKDSActiveOrders:getKDSActiveOrders.getKDSActiveOrders,
+    orderManager:orderManager
 }
 
