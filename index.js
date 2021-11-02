@@ -5,7 +5,7 @@ var getKDSLocations = require(libdir + 'getKDSlocations.js');
 var getKDSinformation = require(libdir + 'getKDSinformation.js');
 var getKDSLocationDevices = require(libdir + 'getKDSLocationDevices.js');
 var getKDSActiveOrders = require(libdir + 'getKDSActiveOrders.js');
-
+var orderManager = require(libdir + 'orderManager.js');
 
 
 
