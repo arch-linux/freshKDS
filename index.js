@@ -6,7 +6,7 @@ var getKDSinformation = require(libdir + 'getKDSinformation.js');
 var getKDSLocationDevices = require(libdir + 'getKDSLocationDevices.js');
 var getKDSActiveOrders = require(libdir + 'getKDSActiveOrders.js');
 var orderManager = require(libdir + 'orderManager.js');
-
+var sendKDSOrder = require(libdir + 'sendKDSOrder.js');
 
 
 module.exports = {
@@ -15,6 +15,7 @@ module.exports = {
     getKDSLocationDevices:getKDSLocationDevices.getKDSLocationDevices,
     getKDSinformation:getKDSinformation.getKDSinformation,
     getKDSActiveOrders:getKDSActiveOrders.getKDSActiveOrders,
-    orderManager:orderManager
+    orderManager:orderManager,
+    sendKDSOrder:sendKDSOrder
 }
 
