@@ -99,7 +99,9 @@ The bare minimum for an order to be processed through FreshKDS is in the "Start 
 ### Start new order
 
 ```
-function startNewOrder(id,orderName,time,mode,name,qty,mods,terminal,returns){
+function startNewOrder(id,orderName,time,mode,name,qty,mods,terminal,(returns) => {
+  console.log(returns);
+});
 ```
 
 The parameters are as follows
