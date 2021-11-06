@@ -120,7 +120,9 @@ The parameters are as follows
 This will transmit your order to KDS and respond with a status.
 
 ```
-function sendKDSOrder(token,order,location,device,response){});
+function sendKDSOrder(token,order,location,device,response => {
+  console.log(response);
+});
 
 ```
 
